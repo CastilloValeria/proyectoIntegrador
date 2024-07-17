@@ -1,0 +1,93 @@
+<%- include("../partials/head.ejs")%>
+
+<body class="bodyproductodetail">
+
+  <%- include("../partials/header.ejs")%>
+
+  <main>
+
+    <section class="Detail__main__principal">
+      <article class="Detail__main__articulos">
+        <h2 style="
+        color: #212529;
+        font-weight: bold;
+        font-size: 45px;
+        margin-left: 10px;
+        "><%= products.titulo %> </h2>
+        <img style="        box-shadow: 0 0 10px #21043d;
+        mix-blend-mode: multiply;
+        filter: brightness(1.1);
+        border: solid 1px black;
+        border-radius: 5%;" src="/img/products/<%= products.Images[0].name %>" alt="<%= products.titulo %> ">
+        <div>
+          <h5>Precio especial Notebook</h5>
+          <h2>$<%= products.price %> </h2>
+          <h2 style="color: black;"> Precio final $<%= products.discount > 0 ? toThousand(products.price - ((products.price * products.discount) / 100)) : toThousand(products.price) %></h2>
+          
+                      
+
+                        <span style="display: flex;color: green;/* left: 26%; */flex-wrap: nowrap;justify-content: space-around;"><%= products.discount > 0 ? products.discount + "% OFF" : null %> </span>
+                      
+                    
+                   
+          <h5>Efectivo o Transferencia</h5>
+          <img src="/img/mercadopago-tarjetas.png" style="
+          position: absolute;
+          top: 77%;
+          width: 17%;
+          left: 72%;
+          "  class="mercadopago">
+        </div>
+        <ul class="caracteristicas__titulo">
+          
+        </ul>
+        <% if(usuario){ %>
+          <form  style="
+          font-size: 34px;
+      "action="/">
+                  <button onclick="addCart(event,'<%= products.id %>','<%= usuario.id %>')" id="buttonAdd">Agregar al carrito</button>
+                </form>
+          
+          <%  } else{%>
+            <form style="
+            font-size: 34px;
+        " action="/products/productCart">
+              <button> <a href="/products/productCart">Agregar al carrito</a></button>
+            </form>
+          
+            <%  } %>
+         
+
+        
+      </article>
+      <article class="Detail__main__caracteristicas">
+        <ul class="caracteristicas__titulo">
+          
+          <p style="
+          text-decoration: underline;
+      ">Caracteristicas</p>
+          <P> MARCA: <%= products.brands.name  %> </P>
+            <% for(propiedad in products.description){ %>
+          <p>
+            <%= propiedad  %>: <%= products.description[propiedad] %>
+          </p>
+          <% } %>
+          
+        </ul>
+      </article>
+    </section>
+    <section class="detail__main__recomendado">
+      <div class="recomendado__titulo">
+       
+      </div>
+
+     
+
+    </section>
+<img src="/img/Cencopay.png" alt="" class="publicidad">
+  </main>
+  <%- include("../partials/footer.ejs")%>
+  <script src="/js/products/detailproduct.js"></script>
+</body>
+
+</html>

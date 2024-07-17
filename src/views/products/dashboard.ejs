@@ -1,0 +1,45 @@
+<%- include("../partials/head.ejs")%>
+
+    <body class="home__body">
+        <%- include("../partials/header.ejs")%>
+            <main class="dashbord">
+
+                <fieldset class="tablet">
+                    <a href="/products/createProduct"><button class="botondash">Crear Producto</button></a>
+                    <section class="home__main__products">
+                        <% products.forEach(product=> {%>
+                
+                            <article class="home__main__products__product">
+                                <div class="home__main__products__product__photo-container">
+                                    <img class="home__main__products__product__photo-container--photo"
+                                        src="/img/products/<%= product.Images[0].name %> " alt="<%= product.titulo %>" />
+                                </div>
+                                <h4 class="h4dash">
+                                    <%= product.titulo %>
+                                </h4>
+                                <div class="contenedor-botones-dashboard">
+                                    <a class="home__main__products__product__photo-container--more listar"
+                                        href="/products/productDetail/<%=product.id %>"><i
+                                            class="fa-brands fa-readme"></i></a>
+                                    <a class="home__main__products__product__photo-container--more editar"
+                                        href="/products/editProduct/<%= product.id %>">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                    </a>
+                                    
+
+                                        <form action="/products/delete/<%=product.id %>?_method=DELETE" id="formulariodelete" method="post" style="display: inline-flex" class="deleteeeeeeeeeeeee">
+                                            <button type="submit"   class="home__main__products__product__photo-container--more eliminar" > <i class="fa-solid fa-trash"></i></button>
+                                            
+                                        </form>
+                                    
+                                </div>
+                            </article>
+                            <% }); %>
+                        </section>
+                </fieldset>
+                
+            </main>
+            <%- include("../partials/footer.ejs")%>
+    </body>
+
+    </html>

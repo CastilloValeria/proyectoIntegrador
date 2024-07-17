@@ -1,0 +1,136 @@
+<%- include("../partials/head.ejs",{title: 'ElectroGroup-registro' })%>
+
+    <body class="body_general_registro">
+        
+
+
+            <div class="copy_header_register">
+                <h3>Crear tu cuenta ElectroGroup</h3>
+            </div>
+
+
+            <div class="cajagranderegiste">
+                <section class="main__register__form2">
+
+
+                    <form action="/users/register" method="post" id="formulario" class="register__form_general" enctype="multipart/form-data">
+                        <div class="formulario__grupo" id="grupo__nombre">
+                            <label for="nombre" class="formulario__label">Ingrese Nombre</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="nombre" id="nombre" value="<%= locals.old && old.nombre ? old.nombre : null %>">
+                                <p class="mensaje_errors"><%= locals.errors && errors.nombre ? errors.nombre.msg : null %> </p>
+                                <i class="formulario__validacion-estado fas fa-times-circle" ></i>
+                            </div>
+                            <p class="formulario__input-error">El nombre tiene que ser de 4 a 20 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                        </div>
+
+                        <div class="formulario__grupo" id="grupo__email">
+                            <label for="email" class="formulario__label">Correo Electrónico</label>
+                            <div class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="email" id="correo" placeholder="correo@correo.com"value="<%= locals.old && old.email ? old.email : null %>" >
+                                <p class="mensaje_errors"><%= locals.errors && errors.email ? errors.email.msg : null %> </p>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+                        
+
+                
+                        <div class="formulario__grupo" id="grupo__email">
+                            <label for="age">Fecha de N. :</label>
+                            <input class="formulario__input" type="date" id="placeholder" name="age" value="<%= locals.user ? user.birthday : locals.old && old.birthday ? old.birthday : null %>">
+                        </div>
+                        
+                        <div class="formulario__grupo" id="grupo__password">
+                            <label for="password" class="formulario__label">Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password" id="password">
+                                <p class="mensaje_errors"><%= locals.errors && errors.password? errors.password.msg : null %> </p>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">La contraseña tiene que ser de 4 a 18 dígitos.</p>
+                        </div>
+            
+                        <div class="formulario__grupo" id="grupo__password2">
+                            <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password2" id="password2">
+                                <p class="mensaje_errors"><%= locals.errors && errors.password? errors.password.msg : null %> </p>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                        </div>
+
+
+                      
+                        <br>
+                        <div class="formulario__grupo">
+                            <label for="image" class="avatar">Foto de perfil</label>
+                            <input type="file" class="form-avatar"  name="image">
+                            <p class="mensaje_errors"><%= locals.errors && errors.image ? errors.image.msg : null %> </p>
+                        </div>
+                        <div class="formulario__grupo" id="grupo__terminos">
+                            <label class="formulario__label">
+                                <input class="formulario__checkbox" style="width: 100%;" type="checkbox" name="terminos" id="terminos">
+                                Acepto los Terminos y Condiciones
+                            </label>
+                        </div>
+                        <div class="register__buttom">
+
+                            <button type="submit" class="formulario__btn2"  >Registrarme</button>
+
+
+                            <h6>Registrarme con</h6>
+                            <nav>
+                                <ul class="redessocialesregsiter">
+                                    <a href="https://google.com"><i class="fa-brands fa-google"></i></i></a>
+                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></i></a>
+                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></i></a>
+                                </ul>
+                            </nav>
+                            <h5>¿ya tiene una cuenta? <a class="loginredirc" href="/users/login"> inicie sesión</a></h5>
+
+
+                        </div>
+                        <% if (locals.nombre && nombre.rol == 'admin') {%>
+                        <div class="register">
+                            <label for="rol">Rol</label>
+            <input type="text" id="rol" name="rol" value="<%= locals.old && old.rol ? old.rol : null %>">
+            <p class="mensaje_errors"> <%= locals.errors && errors.rol ? errors.rol.msg : null %> </p>
+            <% } %>
+                        </div>
+                        
+
+                            
+
+                    
+
+
+                        
+
+                    </form>
+
+                </section>
+            </div>
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+            <div class="footer__productcart">
+                <script src="/js/users/registeruser.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            </div>
+            
+    </body>
+
+    </html>

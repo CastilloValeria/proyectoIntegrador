@@ -1,0 +1,66 @@
+<!--HEADER-->
+
+   <header class="main__header">
+      <div class="main__header__top_bar">
+
+         <a class="hamburguer-buttom" href="">
+            <i class="fa-solid fa-bars"></i>
+         </a>
+
+        <div>
+         <a class="logo" href="/"><img src="/img/logo electrogroup s texto.png" class="logo"
+               alt="Logo ElectroGroup"></a>
+
+
+         <a href="/">
+            <h2 class="copy__header">ElectroGroup</h2>
+         </a>
+      </div> 
+
+         <div class="main__header-search">
+            <form class=search-bar action="/search" method="GET">
+               <input type="text" name="keywords" placeholder="Busca lo que tanto deseas" id="search">
+              
+            </form>
+         </div>
+         <nav class="main__navbar-icon">
+            <ul>
+               <% if(locals.usuario){%>
+                  <img src="/img/users/<%=usuario.avatar %>"  id="image-profile"> 
+                  <%= usuario.username %>
+                  <a  href="/users/userProfile/<%=usuario.id%>">   <i class="fa-solid fa-id-card-clip"></i> </a>
+                  <a  href="/users/logout"> <i class="fas fa-sign-out-alt" style="font-size: 22px;"></i></a>
+               <% }else{ %>
+                  <a href='/users/register'><i class="far fa-address-card"></i></a>
+                  <a href='/users/login'  > <i  class="fa-regular fa-circle-user" ></i>
+               
+                 </a>
+                 <% } %>
+               
+               <a href="/products/productCart"  ><i class="fa-solid fa-cart-shopping"></i></a>
+            </ul>
+         </nav>
+         <div id="mensaje-login" style="display: none;">
+            <p>Haz clic aquí para iniciar sesión</p>
+          </div>
+      </div>
+      <nav class="main-navbar">
+         <ul class="left-navbar">
+            <li><a href="/products/oferta">Ofertas</a></li>
+            <li><a href="/products">Notebooks</a></li>
+            <li><a href="">Accesorios</a></li>
+            <li><a href="">Marcas</a></li>
+         </ul>
+         <ul class="right-navbar">
+            <li><i id="iconodeayuda" class="fa-solid fa-headset"></i><a href="">Centro de ayuda</a></i></li>
+         </ul>
+      </nav>
+      <script src="/js/partials/header.js"></script>
+
+   </header>
+
+   <!--FORMULARIO DE REGISTRO-->
+
+</body>
+<script src="../../../search.js"></script>
+</html>

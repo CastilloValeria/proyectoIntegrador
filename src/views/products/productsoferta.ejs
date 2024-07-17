@@ -1,0 +1,69 @@
+<%- include("../partials/head.ejs")%>
+
+
+<body>
+    
+  <%- include("../partials/header.ejs")%>
+
+    <main>
+      <span style="
+      -webkit-user-modify: read-write-plaintext-only;
+      alignment-baseline: text-after-edge;
+      text-align: center;
+      /* -webkit-text-stroke: thick; */
+      font-size: 45px;
+    
+      
+      display: block;
+      background-color: black;
+      color: white;
+      /* width: 101%; */
+      ">¡¡ Ofertas imperdibles !!</span>
+      <section class="home__main__section">
+  
+        <% products.forEach(producto => { %>
+          <a class="enlace__articulo__detalle" href="/products/productDetail/<%=producto.id %> ">
+            <article class="home__main__section-article oferta">
+              <img class="remove-bg" src= "/img/products/<%= producto.Images[0].name%>" alt="Asus Zenbook pro duo">
+              <div>
+                <p style="font-size: 20px;
+                font-weight: 600;
+                margin: 0px; padding-left: 10px;
+                background-color: antiquewhite;"><%= producto.titulo %> <%= producto.brands.name %> </p>
+                
+                <div class="product-box_data precio">
+                  <p style="text-decoration: line-through;"> Antes $ <%= producto.price %></p>
+                  <h2 style="color: black;margin-left: 0;">Precio final $<%= producto.discount > 0 ? toThousand(producto.price - ((producto.price * producto.discount) / 100)) : toThousand(producto.price) %></h2>
+                  
+                  <span style="position: absolute;top: 15px;color: green;left: 250px;font-size: 30px;"><%= producto.discount > 0 ? producto.discount + "% OFF" : null %> </span>
+                  
+                  
+                </div>
+                  
+                  
+                  
+                <% if(usuario){ %>
+           
+                  <button onclick="addCart(event,'<%= producto.id %>','<%= usuario.id %>')" id="buttonAdd"><a href="/products/productCart">Agregar al carrito</a></button>
+                
+          
+          <%  } else{%>
+           
+              <button> <a href="/products/productCart">Agregar al carrito</a></button>
+           
+          
+            <%  } %>
+                </div>
+                
+              </div>
+              
+            </article>
+          </a>
+          <%}); %>
+          
+        </section>
+        <script src="/js/products/detailproduct.js"></script>
+</main>
+    <%- include("../partials/footer.ejs")%>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+.body2{
+    font-family: Arial, sans-serif; /* Use a fallback font for wider accessibility */
+    margin: 0;
+    padding: 20px;
+    color: #333; /* Set a base text color for improved readability */
+    background: linear-gradient(to bottom right, var(--color-violeta), blue);
+    color: aliceblue;
+}
+.main-garantia{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.h2-garantia {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+
+/* section {
+    margin-bottom: 20px;
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+} */
+
+#garantia-laptops ul, #contacto ul { 
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+#garantia-laptops ul li, #contacto ul li { 
+    line-height: 1.5; 
+}
+
+#contacto {
+    text-align: center;
+}

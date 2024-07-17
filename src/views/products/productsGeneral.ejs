@@ -1,0 +1,56 @@
+<%- include("../partials/head.ejs")%>
+
+
+<body>
+    
+  <%- include("../partials/header.ejs")%>
+
+    <main>
+        
+        <section class="home__main__section">
+
+          <% products.forEach(producto => { %>
+            <a class="enlace__articulo__detalle" href="/products/productDetail/<%=producto.id %> ">
+              <article class="home__main__section-article">
+                <img class="remove-bg" src= "/img/products/<%= producto.Images[0].name%>" alt="Asus Zenbook pro duo">
+                <div>
+                    <p style="font-size: 20px;
+  font-weight: 600;
+  margin: 0px; padding-left: 10px;
+  background-color: antiquewhite;"><%= producto.titulo %> <%= producto.brands.name %> </p>
+                  
+                    <div class="product-box_data">
+                      <p class="precio">  $ <%= producto.price %></p>
+                      <div class="ofertaaa" style="
+                      position: absolute;
+                      top: 34px; ">
+                        
+                      </div> 
+                      
+                      <i class="fa-solid fa-truck-fast fa-beat" style="color: #30b316;position: relative;left: -200px;top: 17px;font-size: 20px;"> Gratis</i>
+                      
+                    </div>
+                    <% if(usuario){ %>
+           
+                      <button onclick="addCart(event,'<%= producto.id %>','<%= usuario.id %>')" id="buttonAdd"><a href="/products/productCart">Agregar al carrito</a></button>
+                    
+              
+              <%  } else{%>
+               
+                  <button> <a href="/products/productCart">Agregar al carrito</a></button>
+               
+              
+                <%  } %>
+                  
+                </div>
+        
+            </article>
+          </a>
+            <%}); %>
+            
+        </section>
+        <script src="/js/products/detailproduct.js"></script>
+</main>
+    <%- include("../partials/footer.ejs")%>
+    </body>
+</html>

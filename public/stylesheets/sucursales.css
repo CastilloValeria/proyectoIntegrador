@@ -1,0 +1,22 @@
+
+.sucursales.main{display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, var(--color-violeta), blue);
+}
+
+.p-sucursales{
+    color: antiquewhite;
+    margin-left: 5px;
+}
+.titulo-principal{
+    color: #7fddff;
+}
+#mision{
+    color: cornflowerblue;
+}
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

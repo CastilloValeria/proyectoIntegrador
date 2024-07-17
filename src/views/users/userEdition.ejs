@@ -1,0 +1,161 @@
+<%- include("../partials/head.ejs")%>
+
+    <body class="home__body">
+
+        <%- include("../partials/header.ejs")%>
+
+            <main class="editar_producto" style="background: linear-gradient(to left, blue,rgb(58, 125, 224));">
+
+                <h1 class="titulo_actualizacion">Actualiza tu informacion</h1>
+                <form class="" id="form" action="/users/profileEdit/<%=user.id%>?_method=PUT" method="post" enctype="multipart/form-data">
+                    
+                    <div class="contenedor_usuario">
+                        <section class="main__register__form3">
+                                <div class="register2 ">
+                                    <label class="labelprofile" for="nombre">Nombre de usuario</label>
+                                    <input type="text" name="nombre" class="campos-edition"  id="nombre" value="<%= locals.user ? user.username : locals.old && old.username ? old.username : null %>">
+                                    <p><%= locals.errores && errores.username ? errores.username.msg : null %> </p>
+                                    
+                                </div>
+
+                                <div class="register2">
+                                    <label class="labelprofile" for="email">Correo Electrónico</label>
+                                    <input type="email" name="email" class="campos-edition"  id="email" value="<%= locals.user ? user.email : locals.old && old.email ? old.email : null %>">
+                                    <p><%= locals.errores && errores.email ? errores.email.msg : null %> </p>
+                                    
+                                </div>
+                                
+                                <div class="register2">
+                                    <label class="labelprofile" for="age">Fecha de N. :</label>
+                                    <div>
+                                    <!-- <select class="date" name="fecha_nacimiento">
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                    
+                                    <select name="mes_nacimiento">
+                                        <option value="01">Enero</option>
+                                        <option value="02">Febrero</option>
+                                        <option value="03">Marzo</option>
+                                        <option value="04">Abril</option>
+                                        <option value="05">Mayo</option>
+                                        <option value="06">Junio</option>
+                                        <option value="07">Julio</option>
+                                        <option value="08">Agosto</option>
+                                        <option value="09">Septiembre</option>
+                                        <option value="10">Octubre</option>
+                                        <option value="11">Noviembre</option>
+                                        <option value="12">Diciembre</option>
+                                    </select>
+                                    
+                                    <select name="anio_nacimiento">
+                                        <option value="1990">1990</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1999">1999</option>
+                                        <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                    </select> -->
+                                    <input class="formulario__input" type="date" name="age" id="age" value="<%= locals.user ? user.birthday : locals.old && old.birthday ? old.birthday : null %>">
+                                    <!-- <%= locals.user ? user.birthday : locals.old && old.birthday ? old.birthday : null %>">
+                                    <p><%= locals.errores && errores.age ? errores.age.msg : null %> </p> -->
+                                </div>
+                                </div>
+
+                                <div class="register2">
+                                <label class="labelprofile" for="direction">Dirección:</label>
+                                <input class="campos-edition" type="text" id="direction" name="direction"  value="<%= locals.user && locals.user.Adress[0] ? locals.user.Adress[0].street : locals.old && old.user.Adress[0].street ? old.user.Adress[0].street : null %>">
+                                <p><%= locals.errores && errores.direction ? errores.direction.msg : null %> </p>
+                                </div>
+
+                                <div class="register2">
+                                    <label class="labelprofile" for="phone">Teléfono:</label>
+                                    <input class="campos-edition" type="text" id="phone" name="phone" value="<%= locals.user && locals.user.Contacts && locals.user.Contacts[0] ? locals.user.Contacts[0].phone : (locals.old && old.Contacts && old.Contacts[0] ? old.Contacts[0].phone : null) %>">
+                                    <p><%= locals.errores && errores.phone ? errores.phone.msg : null %> </p>
+                                </div>
+
+                                <div class="register2">
+                                    <label class="labelprofile" for="genre">Defina su género:</label>
+                                    <select name="genre" id="genre">
+                                        <option value="male">Masculino</option>
+                                        <option value="female">Femenino</option>
+                                        <option value="other">Otro</option>
+                                    </select>
+                                    <p><%= locals.errores && errores.genre ? errores.genre.msg : null %> </p>
+                                    
+                                    <% if (locals.usuario && usuario.rol_id == '1') {%>
+                                </div>
+                                    
+                                <div class="register2">
+                                    <label class="labelprofile" for="rol">Rol</label>
+                                    <select name="rol" id="rol">
+                                    <option value="1">Admin</option>
+                                    <option value="2">User</option></select>
+                                    
+                                    <p> <%= locals.errores && errores.rol_id ? errores.rol_id.msg : null %> </p>
+                                    <% } %>
+                                </div>    
+
+                                <div class="register2">
+                                
+                                <label class="labelprofile" for="image" class="col-12 mt-3">Foto de perfil</label><br>
+                                <img id="img-editionU" src="/img/users/<%= user.avatar %>" alt="profile image">
+                                <input type="file" id="cargar-imagen"  name="image" id="image">
+                                <p><%= locals.errores && errores.image ? errores.image.msg : null %> </p>
+                                </div>
+                            
+                                <div  style="width: 100%;margin-top: 150px;">
+     
+                                <button id="button-edition-user" type="submit">Actualizar</button>
+                                </div>
+                        </section>
+                    </div>
+
+                </form>
+        </main>
+    </body>
+        <script src="/js/users/profile.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
+                                

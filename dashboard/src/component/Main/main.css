@@ -1,0 +1,12 @@
+.Main{
+    flex: 4;
+}
+div.main{
+    margin-left: 21%;
+    top: 28%;
+    position: absolute;
+}
+.MainWidgets{
+    display: flex;
+   
+}

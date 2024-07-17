@@ -1,0 +1,27 @@
+<%- include("../partials/head.ejs")%>
+<body class="home__body">
+  <%- include("../partials/header.ejs")%>
+    <section class="home__main__products">
+          <article class="home__main__products__product">
+            <div class="home__main__products__product__photo-container">
+              <img
+                class="home__main__products__product__photo-container--photo"
+                src="/img/products/<%= product.image %>"
+                alt="<%= product.titulo %>"
+              />
+              
+            </div>
+            <h4><%= product.nombre %></h4>
+            <p>
+              <%= product.description %>
+            </p>
+            <a
+              class="home__main__products__product__photo-container--more"
+              href="/products/detail/<%= product.id %>"
+              >ver mas</a
+            >
+          </article>      
+    </section>
+    <%- include("../partials/footer.ejs")%>
+</body>
+</html>

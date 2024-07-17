@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "username": "ANGEL",
+    "email": "chinoman309@hotmail.com",
+    "password": "$2a$10$LgorbMiHVmWo7uKoFrtRruOFdrxWEosMb1EWvs4T2iNnvDc2p/yM2",
+    "genre": "bien macho",
+    "rol_id": 1,
+    "avatar": "HJFw0ICjM_720x0__1-1705933393815-0670c9cb-f4b7-4855-8877-6fd183a306f0.jpg"
+  },
+  {
+    "id": 2,
+    "username": "MAYCO",
+    "email": "mayco@gmail.com",
+    "password": "$2a$10$y9FsgjwPQ7pK3lptT703SeKnOm5XkAIfLdYx8EMty3qSJA.r6fQ0G",
+    "rol_id": 1,
+    "genre": "masculino",
+    "avatar": "Imagen de WhatsApp 2023-11-17 a las 00.14.46_daa6dc51-1705788501910-0eec67ef-0803-467a-97b2-ee8c5a700df3.jpg"
+  },
+  {
+    "id": 3,
+    "username": "lorenzo",
+    "email": "lolo@gmail.com",
+    "password": "$2a$10$EKhp8S2GnuyTepurqJRy2.OAPmUuaJb/FeaCRth1WcUWVFcrNBt2C",
+    "rol_id": 1,
+    "genre": "masculino",
+
+    "avatar": "potter-1705851479794-a696c97c-4e46-4a7c-bd16-e5814fdae4b7"
+  },
+  {
+    "id":4,
+    "username": "valeria",
+    "email": "ladivaleliz@hotmail.com",
+    "rol_id": 2,
+    "genre": "femenino",
+    "avatar": "user-1705884459217-1df1c611-1d97-4fe7-8855-3ffcb364bb3e.jpeg",
+    "password": "$2b$10$abdhF1eTCLnYqCQKo3k/X.cFN1pF8/dokJuhDnKup2hpsq7hS7PIm"
+  },
+  {
+    "id":5,
+    "username": "Manuel",
+    "email": "manuelc@gmail.com",
+    "genre": "masculino",
+    "rol_id": 2,
+    "avatar": "user2-1705885523194-296d7af6-2783-4d7c-974c-910a46f893cb.jpeg",
+    "password": "$2b$10$vw70kvtykuHL.iATgGIHa.ZbUwdXjMueZvd3HzmyffLJXAMVTeV7q"
+  },
+  {
+    "id":6,
+    "username": "valeria castillo",
+    "email": "casvale@gmail.com",
+    "genre": "femenino",
+    "rol_id": 2,
+
+    "avatar": "user-1706461682108-adb18158-546d-43c3-a296-4fc8a6a6cd0f.jpeg",
+    "password": "12345"
+  },
+  {
+    "id": 7,
+    "username": "valen xcas",
+    "email": "tini06@gmail.com",
+    "genre": "femenino",
+    "rol_id": 1,
+    "avatar": "estrella azul-1708652139898-cc6bf884-7f9c-4149-84e5-bda84a05fec7.jpeg",
+    "password": "$2b$10$L0bWK1PjfslIH2YxF9VbjuQrgzth/F5tvkpFPZKbZdDpEQXszT1FO"
+  }
+]

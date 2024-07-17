@@ -1,0 +1,19 @@
+:root{
+    --color-violeta: rgb(33,4,61);
+    --color-celesteclaro: rgb(0,85,255);
+    --color-celesteoscuro: rgb(25,0,255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

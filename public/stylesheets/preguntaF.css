@@ -1,0 +1,51 @@
+.body-questions {
+    font-family: sans-serif;
+    margin: 0;
+    
+}
+.main-pregF{
+    background: linear-gradient(to bottom right, var(--color-violeta), blue);
+    color: aliceblue;
+}
+.h2-questions{
+    color: aqua;
+
+}
+#preguntas,#p-questions {
+    color: #f0f0f0;
+}
+
+.accordion {
+    list-style: none;
+    padding: 0;
+}
+
+.accordion li {
+    margin-bottom: 10px;
+    
+}
+
+.accordion a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #dbd5d5;
+}
+.accordion p{
+    color: #dbd5d5; 
+}
+.content {
+    padding: 10px;
+
+}
+
+#soporte {
+    text-align: center;
+}
+
+#ul-pregF {
+    
+    margin-left: 20px;
+    color: #f0f0f0;
+}
+

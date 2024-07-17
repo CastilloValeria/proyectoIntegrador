@@ -1,0 +1,554 @@
+.mainindex{
+    background: linear-gradient(to bottom right, var(--color-violeta), blue);
+   
+}
+.home__main__section{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ 
+}
+.imagendeindex{
+
+}
+.home__main__banner{
+    width: 100%;
+}
+.product-box_data {
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    height: 90px;
+  }
+
+.home__main__section article{
+    width: 90%;
+    background-color: rgba(10, 2, 116, 0.025);
+    border: 1px solid var(--color-violeta);
+    border-radius: 5%;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2%;
+    transition: box-shadow 0.8s;
+}
+
+.enlace__articulo__detalle{
+    color:black
+}
+
+.enlace__articulo__detalle img{
+    width: 76%;
+    margin-top: 5px;
+    margin-left: 29px;
+    height: 100%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    transition: 1.5s
+}
+.precio{
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    height: 105px;
+}
+
+.oferta {
+    height: 420px;
+    
+  }
+
+.home__main__section-article div{
+    border-top: 1px solid gray;
+    width: 100%;
+}
+
+.home__main__section p{
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0px 5px;
+    
+}
+.descuentos{
+    position: absolute;
+    top: 52px;
+    color: green;
+    left: 120px;
+    font-size: 18px;
+}
+
+.home__main__section-article button{
+    width: 44%;
+    font-size: 7px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: 1.5s;
+    padding: 1%;
+    
+}
+
+.home__main__section-article h4{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5%;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+.home__main__section-article button a{
+    text-decoration: none;
+    color: black;
+    font-size: 9px;
+}
+
+.home__main__section-article div{
+    position: relative;
+
+}
+
+.home__main__tituloOfertas{
+    display: none;
+}
+
+.home__main__section-ofertas div{
+    border-top: 1px solid gray;
+}
+.home__main__ofertas{
+    display: none;
+}
+
+.home__section__article-logos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    opacity: 0.9;
+    border-radius: 5px;
+    height: 8%;
+    
+}
+
+.home__section__article-logos a{
+    width: 20%;
+}
+
+.home__section__article-logos img {
+    width: 37%;
+    padding: 11px;
+}
+    .whatsapp-simbol {
+        width: 75px;
+        position: fixed;
+        right: 15px;
+        bottom: 109px;
+        animation: emerge 0.8s 1;
+        animation-timing-function: ease-out;
+    }
+
+
+
+/* Tablet responsive */
+
+@media(min-width: 768px){
+ 
+    .home__main__section article{
+        width: 40%;
+        
+    }
+   
+    .enlace__articulo__detalle img{
+        width: 230px;
+        height: 211px;
+        margin-left: 5%;
+    }
+    
+
+    .home__main__section p{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        
+    }
+    
+    .home__main__tituloOfertas{
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        text-decoration: underline;
+        width: 100%;
+        border-top: 2px dotted black;
+    }
+
+    .home__main__ofertas{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home__main__ofertas article{
+        width: 40%;
+        background-color: rgba(10, 2, 116, 0.025);
+        border: 1px solid var(--color-violeta);
+        border-radius: 5%;
+        margin: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2%;
+        transition: box-shadow 0.8s;
+    }
+    
+    
+    .home__main__section-ofertas img{
+        width: 80%;
+        height: 60%;
+        filter:brightness(1.1);
+        mix-blend-mode: multiply;
+        transition: 1.5s;
+        
+    }
+    
+   
+    .home__main__ofertas p{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    .home__main__section-ofertas button{
+        width: 50%;
+        font-size: 12px;
+        position: absolute;
+        bottom: 2%;
+        right: 5%;
+        font-weight: 400;
+        padding: 2%;
+        transition: 1.5s;
+        
+    }
+    
+    .home__main__section-ofertas h4{
+        font-size: 24px;
+        margin: 0 0 10% 3%;
+        font-weight: bold;
+        display: none;
+        transition: display 2s, color, font-size;
+        
+    }
+    .home__main__section-ofertas:hover h4{
+display: block;
+font-size: 40px;
+color: #21043d;
+    }
+    
+    .home__main__section-ofertas button a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .home__main__section-ofertas div{
+        position: relative;
+    
+    }
+    
+
+    .home__section__article-logos{
+        text-align: center;
+    }
+
+    .home__section__article-logos a{
+        width: 20%;
+    }
+    
+    .home__section__article-logos img{
+        width: 9%;
+        padding: 5px;
+    }
+    
+    .home__main__section-article button{
+        
+        font-size: 12px;
+        font-weight: 400;
+        
+        
+    }
+    
+    .home__main__section-article h4{
+        font-size: 24px;
+        margin: 0 0 10% 3%;
+        font-weight: bold;
+    }
+    
+    .home__main__section-article button a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    .home__main__section-article div{
+        position: relative;
+    
+    }
+    
+}
+.main__header__top_bar .main__header-search ::placeholder {
+    text-align: center;
+}
+/*Desktop*/
+
+@media(min-width: 1024px){
+    .home__main__section article{
+        width: 20%;
+        margin: 2%;
+        gap: 2%;
+        transition: box-shadow 0.8s;
+    }
+
+    .home__main__ofertas article{
+        width: 20%;
+        margin: 2%;
+        gap: 2%;
+        transition: box-shadow 0.8s;
+    }
+
+    .home__main__section-article:hover{
+        box-shadow: 0px 0px 50px var(--color-violeta);
+       
+    }
+    
+    .home__main__section-article:hover img{
+        transform: scale(1.2);
+    }
+
+    .home__main__section-article button{
+        width: 50%;
+    font-size: 10px;
+    position: absolute;
+    bottom: 13%;
+    right: 3%;
+    transition: 1.5s;
+    padding: 2%;
+    background-color: lightgreen;
+
+    }
+
+    .home__main__ofertas button{
+        width: 50%;
+        font-size: 10px;
+        position: absolute;
+        bottom: 20%;
+        right: 3%;
+        transition: 1.5s;
+        padding: 2%;
+    
+    }
+    
+    .home__main__section-article h4{
+        font-size: 15px;
+    margin: 0 0 15% 3%;
+    font-weight: bold;
+}
+    
+
+    .home__main__section-ofertas h4{
+        font-size: 15px;
+        margin: 0 0 15% 3%;
+        font-weight: bold;
+    }
+    .home__main__section p{
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        
+    }
+
+    
+    .home__main__ofertas p{
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        
+    }
+
+    
+
+    .home__main__section-ofertas:hover{
+        box-shadow: 0px 0px 50px var(--color-violeta);
+       
+    }
+    
+    .home__main__section-ofertas:hover img{
+        transform: scale(1.2);
+    }
+
+    .home__main__section-article:hover button{
+        background-color: rgb(35, 184, 6);
+    }
+
+    .home__main__section-ofertas:hover button{
+        background-color: rgb(35, 184, 6);
+    }
+
+}
+
+@media(min-width: 1200px){
+    .home__main__section article{
+        width: 20%;
+        margin: 2%;
+        gap: 2%;
+        transition: box-shadow 0.8s;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    }
+
+    .home__main__ofertas article{
+        width: 20%;
+        margin: 2%;
+        gap: 2%;
+        transition: box-shadow 0.8s;
+    }
+    
+    .home__main__section-article h4{
+        font-size: 30px;
+        margin: 0 0 10% 3%;
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+        
+    
+    .home__main__section-ofertas h4{
+        font-size: 30px;
+        margin: 0 0 10% 3%;
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+        
+    
+.banner-container {
+  overflow: hidden; /* Hide overflowing content */
+  position: relative; /* Needed for absolute positioning */
+  width: 100%; /* Set width of the banner */
+  height: 500px; /* Set height of the banner */
+}
+
+.banner-image {
+  width: 100%; /* Set image width to fill container */
+  height: 100%; /* Set image height to fill container */
+  position: absolute; /* Overlap images */
+  opacity: 0; /* Initially hide all images */
+  transition: opacity 0.5s ease-in-out; /* Animation for opacity change */
+}
+
+.banner-image:first-child { /* Style the first image */
+  opacity:1; /* Show the first image by default */
+}
+
+/* Animation for image transitions (replace 5s with your desired interval) */
+.banner-container:hover .banner-image,
+.banner-container .banner-image:nth-child(1) ~ .banner-image {
+  animation: changeImage 10s infinite alternate ease-in-out;
+}
+
+@keyframes changeImage {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+    .home__main__section p{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        top: -27px;
+        
+    }
+
+    .home__main__ofertas p{
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        
+    }
+
+
+
+    .home__main__section-article:hover{
+        box-shadow: 0px 0px 50px var(--color-violeta);
+       
+    }
+    
+    .home__main__section-article:hover img{
+        transform: scale(1.2);
+    }
+
+    .home__main__section-ofertas:hover{
+        box-shadow: 0px 0px 50px var(--color-violeta);
+       
+    }
+    
+    .home__main__section-ofertas:hover img{
+        transform: scale(1.2);
+    }
+
+    .home__main__section-article:hover button{
+        background-color: rgb(35, 184, 6);
+    }
+
+    .home__main__section-ofertas:hover button{
+        background-color: rgb(35, 184, 6);
+    }
+}
+@media (min-width: 1900px){
+.home__main__section-article button {
+    width: 45%;
+    font-size: 11px;
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+    transition: 1.5s;
+    padding: 2%;
+}
+
+.main__navbar-icon {
+    width: 23%;
+    color: white;
+    top: 41px;
+    right: 0px;
+
+
+}
+.ofertaaa{
+    position: absolute;
+    top: 34px;
+}
+
+.home__section__article-logos img {
+    width: 9%;
+    padding: 5px;}
+}
+
+
+
+
+
+
+

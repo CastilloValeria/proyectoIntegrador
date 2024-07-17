@@ -1,0 +1,136 @@
+<%- include("../partials/head.ejs")%>
+
+<body class="home__body">
+
+<%- include("../partials/header.ejs")%>
+
+    <span style="
+    -webkit-user-modify: read-write-plaintext-only;
+    alignment-baseline: text-after-edge;
+    text-align: center;
+    /* -webkit-text-stroke: thick; */
+    font-size: 45px;
+  
+    
+    display: block;
+    background-color: black;
+    color: white;
+    /* width: 101%; */
+    ">Preview User</span>
+<main class="Editar_producto" style="display: flex;background: linear-gradient(to left, blue,rgb(58, 125, 224));flex-direction: row-reverse;justify-content: center;">
+
+                
+                    <div class="contenedor_usuario"  style="    width: 40%;">
+                        <section class="main__register__form">
+                            <div class="register2 ">
+                                <label class="labelprofile" for="">Nombre </label>
+                                    <h2 class=" profileh2">      <%=user.username%></h2>
+                                    
+                            </div>
+                            <div class="register2 ">
+                                <label class="labelprofile" for="">Email</label>
+                                <h2 class=" profileh2">      <%=user.email%></h2>
+                                
+                        </div>
+                        
+                        <% if(user.age) {%>
+                        <div class="register2 ">
+                            <label class="labelprofile" for="">Edad</label>
+                        <h2 class=" profileh2">     <%=user.birthday %> </h2>
+                            
+                    </div>
+                    <% }else { %> 
+                        <%= null %>
+
+                        <% } %>
+
+                        <% if(user.direction) {%>
+                            <div class="register2 ">
+                                        <label class="labelprofile" for="">Direccion</label>
+                            <h2 class=" profileh2">    <%=user.direction %> </h2>
+                                
+                        </div>
+                        <% }else { %> 
+                            <%= null %>
+    
+                            <% } %>
+
+                            <% if(user.phone) {%>
+                                <div class="register2 ">
+                                    <label class="labelprofile" for="">Telefono</label>
+                                <h2 class=" profileh2">      <%=user.phone %> </h2>
+                                    
+                            </div>
+                            <% }else { %> 
+                                <%= null %>
+        
+                                <% } %>
+
+                                <% if(user.genre) {%>
+                                    <div class="register2 ">
+                                        <label class="labelprofile" for="">Genero</label>
+                                    <h2 class=" profileh2">     <%=user.genre %> </h2>
+                                        
+                                </div>
+                                <% }else { %> 
+                                    <%= null %>
+            
+                                    <% } %>
+                                    
+                            <% if (locals.usuario && usuario.rol_id == '1') {%>
+                                <div class="register2" style="    text-align: -webkit-center;">
+                                    <label class="labelprofile" for="rol">Rol</label>
+                                    
+                                    <input class="campos" type="text" id="rol" name="rol" value="<%= user.Rols.name %>">
+                                    <p> <%= locals.errores && errores.rol ? errores.rol.msg : null %> </p>
+                                
+                                </div>    
+                            <% } %>
+                            <% if (locals.usuario && usuario.rol_id == '1') {%>
+                                <div class="register2 ">
+                                    <button class="buttonEdit"   onclick="location.href='http://localhost:5173/' "> Dashboard</button>
+                                </div>
+                                
+                            
+                                <% } %>
+                                
+                                
+                                
+                                <div class="register__buttom" style="width: 100%;margin-top: 75px;">
+                                    
+                                    <button style="font-size: 22px;background-color: rgb(25, 124, 206); width: 50%;
+                        align-self: center;"><a href="/users/profileEdit/<%= user.id%>">Actualiza tu perfil</a></button>
+        </div>
+    </section>
+</div>
+
+</form>
+
+
+<% if(user.image) {%>
+   <div class=" ">
+   
+       <label class="labelprofile" for="image" class="col-12 mt-3"></label><br>
+       <img style="width: 40%;" src="/img/users/<%= user.avatar %>" alt="profile image">
+       
+   </div>
+<% }else { %> 
+<div class=" ">
+   <label class="labelprofile" for="image" class="col-12 mt-3"></label><br>
+   <img style="       width: 500px;
+   height: 500px; border-radius: 5%;;" src="/img/users/<%= user.avatar %>" alt="profile image">
+   <P style="
+   font-size: 35px;
+   color: white;
+">
+    Imagen de perfil
+   </P>
+   <p><%= locals.errores && errores.image ? errores.image.msg : null %>  </p>
+</div>
+   <% } %>
+<p></p>
+  </main>
+  
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+.section-create-product {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.form-create-product {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    padding: 2vw;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 90vw;
+    border-radius: 1%;
+    border-style: groove;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-create-product {
+    margin-top: 3vh;
+    width: 100%;
+}
+
+.container-create-product label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 1vh;
+    color: rgb(218, 224, 228);
+}
+
+.container-create-product input {
+    width: 95%;
+}
+
+.container-create-product select {
+    width: 95%;
+}
+
+.botons_createProduct {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.botons_createProduct button {
+    padding: 2vh 10vw;
+    text-align: center;
+    background-color: #21043d;
+    border-radius: 25px;
+    color: white;
+}
+
+.container_inputs_especificaciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    font-size: 1rem;
+}
+
+.container-inputs label{
+    font-size: 1.0rem;
+}
+
+.add-button{
+    background-color: rgb(198, 198, 198);
+    border-radius: 25px;
+    color: black;
+    padding: 1%;
+    font-weight: bold;
+
+}
+
+.buttonRemoveInput{
+    margin-top: 1vh;
+    padding: 1vh;
+    color: white;
+    background-color: rgb(225, 73, 73);
+    border-radius: 5%;
+}
+
+
+@media(min-width: 768px) {
+    .section-create-product {
+        background-image: url('/img/177606.jpg');
+    }
+
+    .form-create-product {
+        width: 50vw;
+    }
+
+    .botons_createProduct{
+        width: 100%;
+    }
+
+    .botons_createProduct button {
+        padding: 2vh 5vw;
+        text-align: center;
+        background-color: #21043d;
+        border-radius: 25px;
+        color: white;
+    }
+}
+
+@media(min-width: 1024px) {}
+
+@media(min-width: 1444px) {}

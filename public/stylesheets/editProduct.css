@@ -1,0 +1,78 @@
+.edit_product{
+    width: 100%;
+    display: flex;
+    background-image: url(../img/giphy.gif);
+    align-items: center;
+    flex-direction: column;
+
+}
+.form-editProduct{
+    margin-top: 5px;
+    gap: 12px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+}
+.label-editP{
+    color: white;
+    font-size: 17px;
+    width: max-content;
+}
+.input-edicion {
+    font-size: 12px;
+    width: 90%;
+}
+.description textarea {
+    width: 90%;
+    font-size: 12px;
+}
+.boton_edit{
+    width: max-content;
+    margin-bottom: 10px
+}
+.boton_edit_a{
+    color:white;
+    background-color:var(--color-celesteoscuro);
+    font-size: 18px;
+}
+ /* vista tablet */
+
+@media(min-width:768px){
+    .form-editProduct{ 
+    margin-top: 5px;
+    gap: 12px;
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 66px;
+    }
+    .input-edicion {
+        font-size: 18px;
+        width: 55%;
+    }
+
+}
+
+/* vista desktop */
+
+@media (min-width: 1024px){
+.form-editProduct {
+    margin-top: 5px;
+    gap: 12px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+.input-edicion {
+    font-size: 12px;
+    width: 32%;
+    height: 38px;
+}
+.label-editP{
+    color: white;
+    font-size: 22px;
+    width: max-content;
+}
+}

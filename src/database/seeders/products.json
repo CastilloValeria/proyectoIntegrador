@@ -1,0 +1,143 @@
+[
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 525736,
+        "brand_id": 1,
+        "description":"{}",
+        "discount": "10"
+
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 547190,
+        "brand_id": 1,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 1148687,
+        "brand_id": 2,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 599111,
+        "brand_id": 3,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 479946,
+        "brand_id": 2,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 1563860,
+        "brand_id": 3,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 790727,
+        "brand_id": 7,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 943811,
+        "brand_id": 4,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 1465752,
+        "brand_id": 5,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 1015651,
+        "brand_id": 1,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 1001859,
+        "brand_id": 1,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 578033,
+        "brand_id": 2,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming " ,
+        "price": 583194,
+        "brand_id": 3,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 1142552,
+        "brand_id": 2,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming" ,
+        "price": 892728,
+        "brand_id": 3,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming" ,
+        "price": 1576226,
+        "brand_id": 3,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 872904,
+        "brand_id": 2,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 1403801,
+        "brand_id": 2,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 614968,
+        "brand_id": 6,
+        "description":"{}",
+        "discount": "10"
+    },
+    {
+        "titulo": "Notebook Gaming ",
+        "price": 359567,
+        "brand_id": 6,
+        "description":"{}",
+        "discount": "10"
+    }
+]

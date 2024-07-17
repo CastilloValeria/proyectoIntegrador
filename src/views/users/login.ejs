@@ -1,0 +1,75 @@
+<%- include("../partials/head.ejs" ,{title: 'Logeate' })%>
+ 
+
+<body class="body_general_login">
+  
+  <div class="body__login">
+    <div class="logo-login">
+      <img src= "/img/electroGroupstexto.png" alt="logo de login">
+      <h1>ElectroGroup</h1>
+          </div>
+      
+      <main class="registro__main">
+        <title>Electrogroup</title>
+         
+          <fieldset class="registro__main2">
+              <h1>login</h1>
+              
+                <form class="login" action="/users/login" method="post">
+                  <div >
+                    <label for="email"></label>
+                            <input class="imput_register" type="text" name="email" id="email" placeholder="Ingresa tu email"  value="<%= locals.old && old.email %>" >
+                            <p id="error-email"> </p>
+                            <% if (locals.errors && errors.email) { %>
+                              <h6 class="feedback"><%= errors.email.msg %> <br> Para registrarse haga click  <p <button style="color: blue;"  onclick="location.href='/users/register'">"AQUI"</button></p> </h6>
+                              <% } %>
+                          </div>
+                  <div >
+                    <label for="password"></label>
+                            <input class="imput_register" type="password" name="password" id="password"
+                                placeholder="Ingresa contraseña" value="<%= locals.old && old.password %>" />
+                            <p id="error-password"> </p>
+                                <% if (locals.errors && errors.password) { %>
+                                <h6 class="feedback">
+                                    <%= errors.password.msg %>
+                                </h6>
+                                <% } %>
+                    <div class="contraseña">
+                      <a href="/users/register">No tenes cuenta? click aqui</a>
+                  </div>
+                  </div>
+                  <div class="contraseña" style="display: flex;">
+                    <label style="    font-size: 16px;color: rgb(8, 175, 8);width: 80%;" for="remember">Mantener sesion</label>
+                    <input style="width:15%" type="checkbox" name="remember" value="true">
+                </div>
+              
+                  
+                  <div class="contenor_botones" >
+                      <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                      
+                  </div>
+
+                </form>
+                
+            </fieldset>  
+      </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/users/loginValidation.js"></script>
+  
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

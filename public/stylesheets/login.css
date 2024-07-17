@@ -1,0 +1,252 @@
+
+.body_general_login{
+    
+    background-image: url('/img/J4o.gif');
+   
+    width: 100%;
+    
+    
+    padding: 10px;
+    
+    
+}
+.logo-login{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-login img {
+    
+    width: 40%;
+ 
+    
+}
+.logo-login h1{
+    color: white;
+    font-size: 14px;
+}
+
+.registro__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+.registro__main2  {
+
+    color: #21043d;
+    background-color: #ffffffe7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    width: 36%;
+
+}
+
+.registro__main2 h1{
+    
+    margin-top: 7px;
+    font-size: 10px;
+
+}
+
+
+.registro__main form{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+#error-email,#error-password{
+    color:red;
+    font-size: 16px;
+}
+
+.registro__main input
+{
+    width: 100%;
+    border: 0.5px solid ;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40%;
+    
+    
+   
+}
+
+
+.contraseña a{
+    color: #21043d;
+    font-size: 6px;
+
+}
+.contenor_botones{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15%;
+    
+}
+
+.contenor_botones button{
+    border-radius: 25px;
+    background-color: #21043d;
+    color: #FFF;
+    width: 39%;
+    font-size: 7px;
+    border: none;
+
+} 
+#botonrojo{
+    width: 110px;
+    background-color: red;
+}
+@media(min-width: 768px){
+    .registro__main input {
+        width: 100%;
+        border: 0.5px solid;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 75%;
+        
+    }
+    .registro__main2 {
+        color: #21043d;
+        background-color: #ffffffe7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        width: 100%;
+        margin: 5px;
+    }
+    .logo-login h1 {
+        color: white;
+        font-size: 24px;
+    }
+    .logo-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    .logo-login img {
+        width: 100%;
+    }
+    .registro__main2 h1 {
+        margin-top: 7px;
+        font-size: 20px;
+    }
+    .contenor_botones button {
+        border-radius: 25px;
+        background-color: #21043d;
+        color: #FFF;
+        width: 40%;
+        font-size: 15px;
+        border: none;
+    }
+    .contraseña a {
+        color: #21043d;
+        font-size: 12px;
+    }
+    .body__login{
+        display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #21043da8;
+    border-radius: 20px;
+    border: 1px solid white;
+    
+    width: 50%
+
+    }
+    .contenor_botones {
+        display: flex;
+        margin-bottom: 8%;
+        justify-content: space-around;
+    }
+    .body_general_login {
+       
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+}
+@media(min-width: 1024px){
+    .body__login {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #21043da8;
+        border-radius: 20px;
+        border: 1px solid white;
+        width: 40%
+    }
+    .logo-login img {
+        width: 100%;
+    }
+    .logo-login h1 {
+        color: white;
+        font-size: 35px;
+    }
+    .registro__main2 {
+        color: #21043d;
+        background-color: #ffffffe7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        
+    }
+    .registro__main2 h1 {
+        margin-top: 7px;
+        font-size: 25px;
+    }
+    .registro__main input {
+        width: 100%;
+        border: 0.5px solid;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 62%;
+        
+    }
+    .registro__main form {
+        display: flex;
+        flex-direction: column;
+        font-size: 27px;
+        width: 88%;
+    }
+    .body_general_login {
+        
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 200px;
+    }
+    
+
+}
+@media (min-width: 1440px){
+    .registro__main2 {
+        color: #21043d;
+        width: 133%;
+        background-color: #ffffffe7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        
+ }
+
+}

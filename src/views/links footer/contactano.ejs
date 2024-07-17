@@ -1,0 +1,45 @@
+<%- include("../partials/head.ejs")%>
+<body>
+    
+    <%- include("../partials/header.ejs")%>
+    <main class="mainContactos">
+        <form action="" class="formContactos">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="imput-padron" required>
+
+            <label for="correoelecctronico">Correo Electronico</label>
+            <input type="email"id="correoelecctronico" class="imput-padron" required>
+
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="70" rows="10"></textarea>
+
+            <div class="div-contactanos">
+                <p class="p-contact">¿Cómo le gustaría que lo contactemos?</p>
+            
+                <label  class="label-del-div-contact" for="radio-email"><input class="input-del-div-contactanos" type="radio" name="contacto" value="email" id="radio-email">Email</label>
+            
+            
+            
+                <label class="label-del-div-contact" for="radio-whatsapp"><input class="input-del-div-contactanos"  type="radio" name="contacto" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
+            
+            </div>
+            
+            <div class="div-contactanos2">
+                <p class="p-contact">¿En cuál horario prefiere ser atendido?</p>
+                <select class="enviar">
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            <label class="label-del-div-contact" class="checkbox"><input id="contact-check" type="checkbox"><p class="p-contact">¿Le gustaria recibir novedades de Electro Group?</p></label>
+            
+            <input type="submit" value="Enviar formulario" class="enviar">
+            </div>
+        </form>
+        
+    </main>
+
+<%- include("../partials/footer.ejs")%>
+</body>
+</html>

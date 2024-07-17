@@ -1,0 +1,415 @@
+.dashbord{
+    background-image: url('/img/177606.jpg');
+}
+
+.botondash {
+    background-color: #21043d;
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    margin: 10px;
+    width: 100%;
+}
+.h4dash {
+    text-decoration: underline;
+    font-size: 80%;
+}
+.home__main__products__product__photo-container--photo {
+    width: 60%;
+}
+.listar {
+    color: rgb(11, 7, 241);
+    font-size: 19px;
+}
+.editar {
+    color: rgb(9, 255, 0);
+    font-size: 19px;
+}
+.eliminar {
+    color: rgb(255, 0, 0);
+    font-size: 19px;
+}
+.tablet {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-left: 20%;
+    align-items: center;
+}
+.home__main__products__product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #21043d;
+    margin: 10px;
+    background-color: white;
+    width: 100%;
+}
+.home__main__products__product__photo-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home__main__products__product__photo-container--editar i{
+    color:darkmagenta;
+    font-size: center;
+}
+.fa-regular.fa-file-circle-plus{
+    color:darkmagenta;
+    font-size: center;
+}
+
+.createpro{
+    background-image: url('/img/177606.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 86vh;
+}
+.createpro input{
+    width: 100%;
+
+}
+
+.botoncreate {
+    text-align: center;
+    margin-top: 12px;
+}
+.botoncreate button{
+    background-color: #21043d;
+    color: white;
+    border-radius: 25px;
+    width: 30%;
+}
+.createpro form{
+
+    border: 1px solid;
+    width: 63%;
+    font-size: 3px;
+    padding: 10px;
+    /* margin: 10px; */
+    color: white;
+    margin-top: 1%;
+}
+.PRECIOCREATE label{
+    font-weight: bold;
+    padding-bottom: 4px;
+    font-size: 9px;
+}
+
+.PRECIOCREATE {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1px;
+}
+.PREC input{
+    width: 40%;
+    
+}
+.PREC {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+@media(min-width: 768px){
+.tablet {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25%;
+}
+.home__main__products__product__photo-container--photo{
+    width: 50%;
+}
+.eliminar{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    display: contents;
+}
+.editar{
+    color: rgb(9, 255, 0);
+    font-size: 20px;
+}
+.listar{
+    color: rgb(11, 7, 241);
+    font-size: 35px
+}
+.home__main__products__product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #21043d;
+    margin: 10px;
+    background-color: white;
+}
+.home__main__products__product__photo-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h4dash{
+    text-decoration: underline;
+    font-size: 30px;
+} 
+.botondash{
+    background-color: #21043d;
+    color: white;
+    border-radius: 15px;
+    font-size: 25px;
+    margin: 10px;
+    width: 100%;
+}
+.createpro{
+    background-image: url('/img/177606.jpg');
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.createpro input{
+    width: 100%;
+
+}
+
+.botoncreate {
+    text-align: center;
+    margin-top: 12px;
+}
+.botoncreate button{
+    background-color: #21043d;
+    color: white;
+    border-radius: 25px;
+    width: 30%;
+}
+.createpro form{
+
+    border: 1px solid;
+    width: 58%;
+    font-size: 11px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    margin-top: 4%;
+}
+.PRECIOCREATE label{
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.PRECIOCREATE {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+
+.PREC input{
+    width: 40%;
+    
+}
+.PREC {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+}
+@media(min-width: 1024px){
+    .createpro form {
+        border: 1px solid;
+        width: 58%;
+        font-size: 27px;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+        margin-top: 4%;
+    }
+}
+
+
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+    background-color: #21043d;
+    color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+.formulario__btn2:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+.feedback{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+.body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    
+}

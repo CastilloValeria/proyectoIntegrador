@@ -1,0 +1,175 @@
+<%- include("./partials/head.ejs")%>
+
+
+<body>
+    
+  <%- include("./partials/header.ejs")%>
+  
+    <main class="mainindex">
+      
+        <div id="carouselExample" class="carousel slide">
+  <div class="banner-container">
+    
+      
+    
+      <img src="/img/1920.webp" class="banner-image" alt="...">
+          <img src="/img/Cencopay.png" class="banner-image" alt="...">
+    
+  </div>
+  
+</div>
+<span style="
+-webkit-user-modify: read-write-plaintext-only;
+alignment-baseline: text-after-edge;
+text-align: center;
+/* -webkit-text-stroke: thick; */
+font-size: 45px;
+
+
+/* margin-left: 12px; */
+display: block;
+background-color: black;
+color: white;
+/* width: 101%; */
+">Top 5 mas vendido</span>
+
+  
+
+<section class="home__main__section">
+
+  <% product.forEach(producto => { %>
+    <a class="enlace__articulo__detalle" href="/products/productDetail/<%=producto.id %> ">
+      <article class="home__main__section-article">
+        <img class="remove-bg" src= "/img/products/<%= producto.Images[0].name%>" alt="Asus Zenbook pro duo">
+        <div>
+            <p style="font-size: 20px;
+font-weight: 600;
+margin: 0px; padding-left: 10px;
+background-color: antiquewhite;"><%= producto.titulo %> <%= producto.brands.name %> </p>
+          
+            <div class="product-box_data">
+              <p class="precio">  $ <%= producto.price %></p>
+              <div class="ofertaaa" style="
+              position: absolute;
+              top: 34px; ">
+                
+              </div> 
+              
+              <i class="fa-solid fa-truck-fast fa-beat" style="color: #30b316;position: relative;left: -200px;top: 17px;font-size: 20px;"> Gratis</i>
+              
+            </div>
+            <% if(usuario){ %>
+           
+              <button onclick="addCart(event,'<%= producto.id %>','<%= usuario.id %>')" id="buttonAdd"><a href="/products/productCart">Agregar al carrito</a></button>
+            
+      
+      <%  } else{%>
+       
+          <button> <a href="/products/productCart">Agregar al carrito</a></button>
+       
+      
+        <%  } %>
+          
+        </div>
+
+    </article>
+  </a>
+    <%}); %>
+    
+</section>
+          <div>
+            
+            <img src="/img/banner.png" alt="" style="    width: 100%;
+            height: 350px;">
+          </div>
+          <span style="
+          -webkit-user-modify: read-write-plaintext-only;
+          alignment-baseline: text-after-edge;
+          text-align: center;
+          /* -webkit-text-stroke: thick; */
+          font-size: 45px;
+        
+          
+          display: block;
+          background-color: black;
+          color: white;
+          /* width: 101%; */
+          ">Ofertas</span>
+<section class="home__main__section">
+  
+  <% product.forEach(producto => { %>
+    <a class="enlace__articulo__detalle" href="/products/productDetail/<%=producto.id %> ">
+      <article class="home__main__section-article oferta">
+        <img class="remove-bg" src= "/img/products/<%= producto.Images[0].name%>" alt="Asus Zenbook pro duo">
+        <div>
+          <p style="font-size: 20px;
+          font-weight: 600;
+          margin: 0px; padding-left: 10px;
+          background-color: antiquewhite;"><%= producto.titulo %> <%= producto.brands.name %> </p>
+          
+          <div class="product-box_data precio">
+            <p style="text-decoration: line-through;"> Antes $ <%= producto.price %></p>
+            <h2 style="color: black;margin-left: 0;">Precio final $<%= producto.discount > 0 ? toThousand(producto.price - ((producto.price * producto.discount) / 100)) : toThousand(producto.price) %></h2>
+            
+            <span style="position: absolute;top: 15px;color: green;left: 250px;font-size: 30px;"><%= producto.discount > 0 ? producto.discount + "% OFF" : null %> </span>
+            
+            
+          </div>
+            
+            
+            
+          <% if(usuario){ %>
+           
+                    <button onclick="addCart(event,'<%= producto.id %>','<%= usuario.id %>')" id="buttonAdd"><a href="/products/productCart">Agregar al carrito</a></button>
+                  
+            
+            <%  } else{%>
+             
+                <button> <a href="/products/productCart">Agregar al carrito</a></button>
+             
+            
+              <%  } %>
+          </div>
+          
+        </div>
+        
+      </article>
+    </a>
+    <%}); %>
+    
+  </section>
+
+  
+  
+  <a href="https://wa.me/3804558787" target="_blank"> <img src="/img/whatsapp.png" class="whatsapp-simbol" alt="whatsapp-símbolo"></a>
+  
+  <h2 style="
+  -webkit-user-modify: read-write-plaintext-only;
+  alignment-baseline: text-after-edge;
+  text-align: center;
+  /* -webkit-text-stroke: thick; */
+  font-size: 45px;
+  
+  
+  display: block;
+  background-color: black;
+  color: white;
+  margin-left: 0px;
+  ">Nuestras marcas</h2>
+  <section class="home__section__article-logos">
+    <marquee behavior="" direction="">
+      <a href="https://www.intel.la/content/www/xl/es/homepage.html" target="_blank"><img src="/img/Logo Intel Home Color 2 OK.png" alt="Logo Intel"></a>
+      <a href="https://www.amd.com/es.html" target="_blank"><img src="/img/Logo AMD Home Color OK 2.png" alt="Logo AMD"></a>
+      <a href="https://www.asus.com/" target="_blank"><img src="/img/Logo ASUS Home Color OK.png" alt="Logo Asus"></a>
+            <a href="https://www.lenovo.com/ar/es/" target="_blank"><img src="/img/Logo LENOVO Home Color OK.png" alt="Logo lenovo"></a>
+            <a href="https://www.gigabyte.com/" target="_blank"><img src="/img/Logo Gigabyte Home Color OK 2.png" alt="Logo gygabyte"></a>
+          </marquee>
+          </section>
+
+        
+    </main>
+    <%- include("./partials/footer.ejs")%>
+    <script src="/js/products/detailproduct.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

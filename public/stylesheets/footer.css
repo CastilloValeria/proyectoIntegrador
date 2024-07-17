@@ -1,0 +1,153 @@
+footer{
+    background: linear-gradient(to bottom right,var(--color-violeta), blue);
+    color: white;
+    }
+
+footer nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 0
+  
+}
+
+footer nav ul {
+    width: 25%;
+    font-size: 6px;
+    text-align: center;
+    margin: 0 2%;
+    }
+
+footer nav ul li{
+    padding: 5% 0;
+    
+}
+
+
+footer nav h5{
+    font-size: 8px;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+    font-weight: 300;
+    
+}
+
+footer nav div{
+    align-self: flex-end;
+    width: 16%;
+    margin-left: 2%;
+    position: absolute;
+    top:65px;
+    right: 0px;
+}
+
+.home__footer__comunidad{
+    display: none;
+}
+
+footer nav div a{
+    display: inline-block;
+    width: 40%;
+}
+
+footer nav div a i{
+    width: 100%;
+    padding-left: 8%;
+}
+
+.footer__copyright{
+    font-size: 5px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+
+
+@media(min-width: 768px){
+    footer nav ul {
+        width: 20%;
+        font-size: 10px;
+        margin: 0 5%;
+        text-align: center;
+        
+        }
+
+    footer nav h5{
+            font-size: 14px;
+        }
+    
+        footer nav div{
+            
+            width: 25%;
+            text-align: center;
+            top:100px;
+            right: 18px;
+        }
+        
+
+    .home__footer__comunidad{
+        display: block;
+        
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5%;
+    }
+
+     footer nav div a{
+        
+        width: 22%;
+            padding-left: 1%
+        } 
+
+        footer nav div i{
+            font-size: 25px;
+        
+        }
+    
+    .footer__copyright{
+            font-size: 8px;
+            
+        }
+}
+
+@media(min-width: 1024px){
+    
+    footer nav{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    footer nav ul {
+        font-size: 14px;
+       }
+    footer nav h5{
+        font-size: 20px;
+    }
+    .home__footer__comunidad{
+       
+        font-size: 22px;
+        padding-left: 10px;
+        
+    }
+
+    footer nav div{
+            
+        width: 25%;
+        top:145px;
+        right: 32px;
+        text-align: center;
+    }
+    
+    footer nav div i{
+        font-size: 25px;
+    
+    }
+    footer nav div a{
+        width: 22%;
+        padding-left: 10%;
+    }
+
+    
+    
+}

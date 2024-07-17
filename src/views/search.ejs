@@ -1,0 +1,63 @@
+<%- include("../views/partials/head.ejs")%>
+
+<body>
+
+  <%- include("../views/partials/header.ejs")%>
+
+  <main class="productos">
+    
+      <% if(keywords.length >0){ %>
+
+    <div class="main_title_box">
+      <hr class="hr_txt" />
+      <h2 style="color: black;">RESULTADOS DE: "<%= keywords%>" </h2>
+      <hr class="hr_txt" />
+    </div>
+
+    <section class="home__main__section">
+        <% products.forEach(producto => { %>
+        <a class="enlace__articulo__detalle" href="/products/productDetail/<%=producto.id %> ">
+          <article class="home__main__section-article">
+            <img class="remove-bg" src= "/img/products/<%= producto.Images[0].name%>" alt="">
+            <div>
+                <p><%= producto.titulo %></p>
+                
+                <div class="product-box_data">
+                  <p> Precio: <%= producto.price %></p>
+                  <h2 style="color: black;margin-left: 0;">Precio final $<%= producto.discount > 0 ? toThousand(producto.price - ((producto.price * producto.discount) / 100)) : toThousand(producto.price) %></h2>
+                  
+                  <span class="descuentos"><%= producto.discount > 0 ? producto.discount + "% OFF" : null %> </span>
+                  
+                  
+                </div>
+                <% if(usuario){ %>
+           
+                  <button onclick="addCart(event,'<%= producto.id %>','<%= usuario.id %>')" id="buttonAdd"><a href="/products/productCart">Agregar al carrito</a></button>
+                
+          
+          <%  } else{%>
+           
+              <button> <a href="/products/productCart">Agregar al carrito</a></button>
+           
+          
+            <%  } %>
+              
+            </div>
+    
+        </article>
+      </a>
+        <%}); %>
+        <% }else{%>
+			<div class="col-12">
+				<h2 class="products-title" style="color: tomato;">No hay productos que coincidan con esa búsqueda</h2>
+			</div>
+			<% }%>
+        
+    </section>
+  </main>
+  <script src="/js/products/detailproduct.js"></script>
+  <%- include("../views/partials/footer.ejs")%>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 2,
+    "image": "1-rog strix g16.png",
+    "titulo": "Notebook Gamer ROG Strix g16",
+    "description": {
+      "opcional": "Laptop 2 en 1 potente y liviana con Intel Eva opcional",
+      "arranque": "Inicio de sección con un solo toque",
+      "lapiz": "arranque al mundo gamer",
+      "detalles": "Ver los detalles del Producto",
+      "marca": "Marca: STRIX",
+      "modelo": "Nombre del modelo:  ROG Strix g16",
+      "pantalla": "Tamaño de pantalla: 16 Pulgadas",
+      "disco": "Tamaño de disco duro: 1TB SSD",
+      "cpu": " CPU: Core i7",
+      "memoria": "Memoria Ram Instalada:16 GB",
+      "sistema": "Sistema Operativo: Windows 10 Pro",
+      "grafica": "Tarjeta gráfica: RTX 3070 8GB",
+      "velocidad": "Velocidad de la CPU: 5 GHz"
+    },
+    "price": "2.167.999"
+  },
+  {
+    "id": 5,
+    "titulo": "Laptop gamer Legion 5 Gen 6 ",
+    "description": "(15.6\", AMD)",
+    "price": 99999,
+    "image": "image-1704046902616.jpg"
+  },
+  {
+    "titulo": "computadora ",
+    "description": "Procesador intel : 5ghz\r\n\r\npantalla plana \r\n\r\nmemoria RAM : 5",
+    "price": "500000",
+    "image": "image-1705930830465.jpg",
+    "id": 7
+  }
+]

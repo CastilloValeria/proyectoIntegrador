@@ -1,0 +1,516 @@
+.body_general_registro {
+    background-image: url('/img/J4o.gif');
+
+    width: 100%;
+
+}
+
+.mensaje_errors{
+    font-size: 15px;
+    color:red;
+    font-weight: 700;
+}
+.imgAvatar{
+    width: 99%;
+}
+.form-avatar{
+    width: 93%;
+    margin: 15px}
+/*FORMULARIO DE REGISTRO mobile*/
+.register label {
+    font-size: 25px;
+    color: lightsteelblue;
+}
+
+
+.copy_header_register h3 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.cajagranderegister {
+    width: 79%;
+    background-color: #d9c5c5e6;
+    margin-left: 8%;
+    border-radius: 3%
+}
+
+.redessocialesregsiter {
+    color: white;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenedor_usuario{
+    text-align: -webkit-center;
+}
+.main__register__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    background-color: #f2f2f2;
+    color: white;
+    padding: 14px;
+    align-items: stretch;
+    height: max-content;
+    border-radius: 11px;
+    margin: 10px;
+}
+.main__register__form2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background-color: #00000080;
+    color: white;
+    padding: 19px;
+    align-items: stretch;
+    height: max-content;
+    border-radius: 26px;
+}
+.register__form_general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.iconousuario {
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    font-size: 14px;
+    color: #21043d;
+}
+#look{
+margin-top: 12px;
+}
+.register {
+    align-items: center;
+    position: relative;
+    padding-top: 5px;
+}
+
+.register__form_general-label {
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.register__form_general-icon {
+    margin-right: 250px;
+    font-size: 28px;
+    color: rgb(175, 170, 170);
+    position: absolute;
+    top: 41px;
+    left: 12px;
+}
+
+.register__form_general-input {
+    padding-right: 90px;
+}
+
+.register__terminos-condiciones {
+    display: flex;
+    font-size: 15px;
+    padding-top: 14px;
+    width: 74%;
+}
+
+.register__terminos-condiciones input {
+    width: 9%;
+}
+
+.register #placeholder {
+    text-align: center;
+    background-color: rgb(212, 210, 210);
+    font-size: 19px;
+    width: 95%;
+    border-radius: 25px;
+}
+.register__buttom {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.register__buttom nav ul i {
+    font-size: 35px;
+    padding-right: 50px;
+    color: white
+}
+.loginredirc:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.register__buttom button {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    background-color:cornflowerblue;
+}
+
+.register__buttom h6 {
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.register__buttom h5 {
+    color: cornflowerblue;
+    margin-top: 5px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.formulario__grupo{
+    width: 100%;
+}
+.buttonEdit{
+    padding: 5px;
+    margin: 15px;
+    
+    border-radius: 8px 8px 8px 8px;
+    background-color: var(--bs-blue);
+}
+/*FORMULARIO DE REGISTRO tablet*/
+@media(min-width:768px) {
+    .formulario__grupo{
+        width: 100%;
+    }
+    .iconousuario {
+        position: absolute;
+        left: 0%;
+        top: 32%;
+        font-size: 16px;
+    }
+
+    .redessocialesregsiter {
+        margin-left: 6%;
+    }
+    
+
+    .register__form .register__form_general {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .copy_header_register h3 {
+        text-align: center;
+        font-weight: 100;
+        color: white;
+        font-weight: 400;
+        text-decoration: underline;
+
+        width: 100%;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .register {
+        width: 100%;
+        margin-top: 49px;
+        height: 106px;
+    }
+
+    .register__terminos-condiciones {
+        display: flex;
+        align-items: center;
+        font-size: 0px;
+        padding-top: 0px;
+        width: 59%;
+    }
+
+    .register__form_general-label {
+        position: relative;
+        top: 46px;
+        left: 39px;
+        text-decoration: underline;
+    }
+
+    .register__form_general-icon {
+        margin-right: 250px;
+        font-size: 0px;
+        color: rgb(175, 170, 170);
+        position: relative;
+        left: -20%;
+        top: 46%;
+    }
+
+
+    .register__form_general-input {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 20px;
+
+
+    }
+
+    .register #placeholder {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 9%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        background-color: rgb(212, 210, 210);
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .register__buttom button {
+        padding: 20px;
+
+        font-size: 18px;
+
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+        background-color: rgb(160, 201, 241);
+    }
+
+    .register__buttom h6 {
+        margin-top: 5px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .main__register__terminos-condiciones {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .register__form_general {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__container {
+        background-color: violet;
+        border: solid 1px blue;
+    }
+
+    .register__terminos-condiciones label {
+        font-size: 20px;
+    }
+
+    .register__form_general .register {
+        flex-wrap: wrap;
+    }
+
+    .cajagranderegister {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media(min-width:1024px) {
+    .iconousuario {
+        position: absolute;
+        left: 0%;
+        top: 31%;
+        font-size: 16px;
+    }
+
+    .cajagranderegister {
+        width: 70%;
+        margin-left: 14%;
+    }
+
+    .register__terminos-condiciones {
+        display: flex;
+        width: 50%;
+        align-items: center;
+
+    }
+
+    .register__form_general-icon {
+        margin-right: 250px;
+        font-size: 0px;
+        color: rgb(175, 170, 170);
+        position: relative;
+        left: -23%;
+        top: 48%;
+    }
+    .formulario__grupo{
+        width: 100%;
+    }
+}
+
+/*FORMULARIO DE REGISTRO Desktop*/
+@media(min-width:1440px) {
+    .iconousuario i .fa-solid.fa-eye-slash{
+        position: absolute;
+        top: 27%;
+        width: 3%;
+        font-size: 10px;}
+
+    .register__form .register__form_general {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .copy_header_register h3 {
+        text-align: center;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        text-decoration: underline;
+        width: 100%;
+        font-size: 45px;
+        padding-top: 20px;
+    }
+
+    .register {
+        width: 100%;
+        margin-top: 0px;
+        height: 100px;
+    }
+    .register2 {
+        border: outset;
+        font-variant: discretionary-ligatures;
+    
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+
+    .register__terminos-condiciones {
+        display: flex;
+        width: 45%;
+        align-items: center;
+
+    }
+
+    .cajagranderegister {
+        width: 53%;
+        margin-left: 25%;
+    }
+
+    .register__form_general-label {
+        position: relative;
+        top: 46px;
+        left: 39px;
+        text-decoration: underline;
+    }
+
+    .register__form_general-icon {
+        margin-right: 250px;
+        font-size: 0px;
+        color: rgb(175, 170, 170);
+        position: relative;
+        left: -200px;
+        top: 47px;
+    }
+
+
+    .register__form_general-input {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .register #placeholder {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 9%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        background-color: rgb(212, 210, 210);
+        font-size: 18px;
+        width: 100%;
+    }
+    .register2 #placeholder {
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 9%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        background-color: rgb(212, 210, 210);
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .register__buttom button {
+        width: 50%;
+    align-self: center;
+    padding: 17px;
+    font-size: 23px;
+    margin-top: 50px;
+    margin-left: 0px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+        background-color: rgb(160, 201, 241);
+    }
+
+    .register__buttom h6 {
+        margin-top: 1%;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 1%;
+    }
+
+    .main__register__terminos-condiciones {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .register__form_general {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    align-self: center;
+    }
+
+    .footer__container {
+        background-color: violet;
+        border: solid 1px blue;
+    }
+
+    .register__terminos-condiciones label {
+        font-size: 20px;
+    }
+
+    .register__form_general .register {
+        flex-wrap: wrap;
+    }
+
+    .redessocialesregsiter {
+        margin-left: 3%;
+    }
+    .formulario__grupo{
+        width: 100%;
+    }
+}

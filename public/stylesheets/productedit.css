@@ -1,0 +1,265 @@
+
+.body_general_edit{
+    
+    background-image: url('/img/177606.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 10px;
+    
+    
+}
+.logo-edit{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-edit img {
+    
+    width: 40%;
+ 
+    
+}
+.logo-edit h1{
+    color: white;
+    font-size: 14px;
+}
+
+.registro-edit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+.registro-edit2  {
+
+    color: #21043d;
+    background-color: #ffffffe7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    width: 70%;
+
+
+}
+
+.registro-edit2 h1{
+    
+    margin-top: 7px;
+    font-size: 10px;
+
+}
+
+
+.registro-edit form{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+
+
+.registro-edit input
+{
+    width: 100%;
+    border: 0.5px solid ;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 40%;
+    
+    
+   
+}
+
+
+.contraseña a{
+    color: #21043d;
+    font-size: 6px;
+
+}
+.contenor_botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    
+}
+
+.contenor_botones button{
+    border-radius: 25px;
+    background-color: #21043d;
+    color: #FFF;
+    width: 39%;
+    font-size: 7px;
+    border: none;
+
+} 
+#botonrojo{
+    background-color: red;
+    
+}
+.registro-edit form  ::placeholder{
+    
+    text-decoration-line: underline;
+    
+}
+@media(min-width: 768px){
+    .registro-edit input {
+        width: 100%;
+        border: 0.5px solid;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 75%;
+        
+    }
+    .registro-edit2 {
+        color: #21043d;
+        background-color: #ffffffe7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        width: 100%;
+        margin: 25px;
+    }
+    .logo-edit h1 {
+        color: white;
+        font-size: 24px;
+    }
+    .logo-edit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    .logo-edit img {
+        width: 100%;
+    }
+    .registro-edit2 h1 {
+        margin-top: 6px;
+    font-size: 16px;
+    }
+    .contenor_botones button {
+        border-radius: 25px;
+        background-color: #21043d;
+        color: #FFF;
+        width: 46%;
+    font-size: 20px;
+        border: none;
+    }
+    .contraseña a {
+        color: #21043d;
+        font-size: 12px;
+    }
+    .body__edit{
+        display: flex;
+        align-items: center;
+       
+        background-color: #21043da8;
+        border-radius: 20px;
+        border: 1px solid white;
+        height: 40vh;
+        width: 85vh;
+
+    }
+    .contenor_botones {
+        display: flex;
+    
+    justify-content: space-around;
+    margin-top: 5%;
+    }
+    .body_general_edit {
+        background-image: url(/img/177606.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+}
+@media(min-width: 1024px){
+    .body__edit {
+        display: flex;
+        align-items: center;
+        
+        background-color: #21043da8;
+        border-radius: 20px;
+        border: 1px solid white;
+        height: 50%;
+        width: 90%;
+    }
+    .logo-edit img {
+        width: 70%;
+
+    }
+    .logo-edit h1 {
+        color: white;
+        font-size: 35px;
+    }
+    .registro-edit2 {
+        color: #21043d;
+        background-color: #ffffffe7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        height: 47vh;
+    width: 43vh;
+    }
+    .registro-edit2 h1 {
+        margin-top: 7px;
+        font-size: 25px;
+    }
+    .registro-edit input {
+        width: 100%;
+        border: 0.5px solid;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 62%;
+        
+    }
+    .registro-edit form {
+        display: flex;
+        flex-direction: column;
+        font-size: 27px;
+        width: 88%;
+        
+        
+    }
+    .body_general_edit {
+        background-image: url(/img/177606.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+    }
+    
+
+}
+@media (min-width: 1440px){
+    .registro-edit2 {
+        color: #21043d;
+        background-color: #ffffffe7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        height: 48VH;
+    width: 100%;
+ }
+ 
+
+}

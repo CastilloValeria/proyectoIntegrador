@@ -1,0 +1,49 @@
+<%- include("../partials/head.ejs")%>
+
+    <body class="home__body">
+        <%- include("../partials/header.ejs")%>
+            <main class="dashbord">
+
+                <fieldset class="tablet">
+                
+                    <section class="home__main__products">
+                        <% user.forEach(user=> {%>
+                           
+
+                                <article class="home__main__products__product">
+                                    <div class="home__main__products__product__photo-container">
+                                        <img class="home__main__products__product__photo-container--photo"
+                                            src="/img/users/<%= user.avatar %> " alt="<%= user.titulo %>" />
+                                        <p style="    font-weight: bold">Nombre  de usuario: <%= user.username %> </p> 
+                                        <p style="color: black;"> Email de usuario: <%= user.email %> </p> 
+                                        <p style="color: black;"> Rol de usuario:  <%= user.rol_id %>  </p> 
+                                        <a href="/users/profileEdit/<%= user.id %>" > <i class="fa-regular fa-pen-to-square" style="color: blue;"></i></a>
+                                        <form action="/users/delete/<%= user.id %>?_method=DELETE"  method="post" style="display: inline-flex" class="deleteeeeeeeeeeeee">
+                                            <button type="submit" class="home__main__products__product__photo-container--more eliminar" > <i class="fa-solid fa-trash"></i></button>
+                                            
+                                        </form>
+                                    </div>
+                                    <h4 class="h4dash">
+                                        <%= user.titulo %>
+                                    </h4>
+                                    <!-- <div class="contenedor-botones-dashboard">
+                                        <a class="home__main__products__product__photo-container--more listar"
+                                            href="/products/productDetail/<%= user.id %>"><i
+                                                class="fa-brands fa-readme"></i></a>
+                                        <a class="home__main__products__product__photo-container--more editar"
+                                            href="/products/editProduct/<%= user.id %>">
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </a>
+                                        <form action="/products/delete/<%= user.id %>?_method=DELETE"  method="post" style="display: inline-flex" class="deleteeeeeeeeeeeee">
+                                            <button type="submit" class="home__main__products__product__photo-container--more eliminar" > <i class="fa-solid fa-trash"></i></button>
+                                            
+                                        </form>
+                                    </div> -->
+                                </article>
+                            
+                            <% }); %>
+                        </section>
+                </fieldset>
+                
+            </main>
+            <%- include("../partials/footer.ejs")%>
